@@ -131,11 +131,11 @@ dmypy.json
 
 *__pycache__
 *.pyc
-hikka/api_token.py
-hikka/loaded_modules
+heroku/api_token.py
+heroku/loaded_modules
 loaded_modules
-hikka/debug_modules
-hikka*.session*
+heroku/debug_modules
+heroku*.session*
 database-*.json
 *.swp
 .setup_complete
