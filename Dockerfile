@@ -29,8 +29,8 @@ RUN curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/scr
 RUN apt-get install speedtest
 
 RUN mkdir /data
-RUN git clone https://raw.githubusercontent.com/coddrago/Heroku/ /data/Hikka
-WORKDIR /data/Hikka
+RUN git clone https://github.com/coddrago/Heroku /data/Heroku
+WORKDIR /data/Heroku
 
 RUN pip install --no-warn-script-location --no-cache-dir -U -r requirements.txt
 RUN pip install --no-warn-script-location --no-cache-dir -U -r optional_requirements.txt
@@ -38,4 +38,4 @@ RUN pip install --no-warn-script-location --no-cache-dir -U -r optional_requirem
 EXPOSE 8080
 
 # Run
-CMD python -m hikka --port 8080
+CMD python -m heroku --port 8080
